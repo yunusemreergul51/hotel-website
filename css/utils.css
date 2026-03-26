@@ -119,6 +119,18 @@
     color: var(--white);
 }
 
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.btn-outline:hover {
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    color: var(--dark);
+}
+
 /* flex items */
 
 .flex-items {
@@ -132,3 +144,33 @@
     padding: 20px;
     flex-basis: 100%;
 }
+
+/* flex columns */
+.flex-columns.flex-reverse .row {
+    flex-direction: row-reverse;
+}
+
+.flex-columns .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-columns .column {
+    flex: 1;
+}
+
+.flex-columns .column .column-1, 
+.flex-columns .column .column-2 {
+    height: 100%;
+}
+
+.flex-columns .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem;
+}
+
