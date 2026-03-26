@@ -25,14 +25,14 @@
 
 /* bg-colors */
 
-.bg-primary { color: var(--primary)}
-.bg-secondary { color: var(--secondary)}
-.bg-success { color: var(--success)}
-.bg-danger { color: var(--danger)}
-.bg-warning { color: var(--warning)}
-.bg-info { color: var(--info)}
-.bg-dark { color: var(--dark)}
-.bg-light { color: var(--light)}
+.bg-primary { background-color: var(--primary)}
+.bg-secondary { background-color: var(--secondary)}
+.bg-success { background-color: var(--success)}
+.bg-danger { background-color: var(--danger)}
+.bg-warning { background-color: var(--warning)}
+.bg-info { background-color: var(--info)}
+.bg-dark { background-color: var(--dark)}
+.bg-light { background-color: var(--light)}
 
 
 /* buttons */
@@ -117,4 +117,18 @@
     background-color: var(--primary);
     border: 1px solid var(--primary);
     color: var(--white);
+}
+
+/* flex items */
+
+.flex-items {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.flex-items > div {
+    padding: 20px;
+    flex-basis: 100%;
 }
