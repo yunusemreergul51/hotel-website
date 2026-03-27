@@ -192,9 +192,7 @@ img {
 /* teams */
 
 .teams img {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
+    border-radius: 20%;
     object-fit: cover;
 }
 
@@ -206,6 +204,11 @@ img {
 .contact-form {
     width: 100%;
     padding: 2rem 0;
+}
+
+.contact img {
+    width: 100%;
+    height: 100%;
 }
 
 .contact-form label {
@@ -250,4 +253,26 @@ img {
 }
 .footer a:hover {
     opacity: 0.8;
+}
+
+/* mobile */
+@media(max-width: 768px){
+    html{
+        font-size: 8px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: 110px;
+        padding: 20px;
+    }
+
+    .navbar a{
+        padding: 10px;
+        margin: 0 3px;
+    }
+
+    .teams img{
+        width: 60%;
+    }
 }
