@@ -173,3 +173,31 @@ img {
     opacity: 0.8;
     cursor: pointer;
 }
+
+/* cards */
+.card {
+    color: #fff;
+    font-weight: 700;
+}
+
+.card-body {
+    padding: 2rem;
+    margin-top: -10px;
+}
+.card-body h2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+/* teams */
+
+.teams img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.teams img:hover {
+    opacity: 0.8;
+}
